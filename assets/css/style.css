@@ -1,0 +1,128 @@
+/* Custom CSS for Martial Arts Academy */
+
+body {
+    font-family: "Noto Sans", Georgia, sans-serif;
+}
+
+body, html {
+    /* Use the entire viewport */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body-bg {
+    /* Use your own image URL here */
+    background-image: url('https://sayoc-germany.github.io/assets/images/sama-sama-02.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This will give a parallax-like effect */
+    
+    /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+
+    /* Ensure the content on top is not blurred */
+    position: relative;
+    z-index: 1;
+}
+
+/* Make sure other elements like modals, dropdowns, etc., are not affected by the blur */
+.modal-content, .dropdown-menu {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+}
+
+/* Style for navbar tabs with a light/grey background */
+.navbar-nav .nav-item .nav-link {
+    background-color: #f8f9fa; /* Light grey background */
+    margin: 2px;
+    border-radius: .25rem; /* Slight rounding of corners for a tab-like appearance */
+    color: #333; /* Dark text color for contrast */
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus,
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #e2e6ea; /* Slightly darker grey for hover/focus/active states */
+    color: #000; /* Darker text color for readability */
+}
+
+.navbar-nav .nav-item .nav-link i {
+    margin-right: 5px; /* Spacing between icon and text (if any text is added) */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .navbar-nav .nav-item .nav-link {
+        margin: 0; /* Remove margins on smaller screens */
+        border-radius: 0; /* Tabs become full-width buttons on mobile */
+    }
+}
+
+/* Custom Container */
+.custom-container {
+    width: 100%;
+    max-width: 980px; /* Set your max-width here */
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (max-width: 991px) {
+    .custom-container {
+        max-width: 100%;
+    }
+}
+
+/* Carousel customization */
+.intro-slider {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.intro-slider .carousel-item img {
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+/* Responsive map container */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Style contact form section */
+.contact-form {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.g-recaptcha {
+    margin-bottom: 15px;
+}
