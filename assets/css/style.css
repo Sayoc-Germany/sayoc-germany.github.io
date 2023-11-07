@@ -14,7 +14,7 @@ body, html {
 
 .body-bg {
     /* Use your own image URL here */
-    background-image: url('https://sayoc-germany.github.io/assets/images/sama-sama-02.png');
+    background-image: url('../images/sama-sama-01.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This will give a parallax-like effect */
