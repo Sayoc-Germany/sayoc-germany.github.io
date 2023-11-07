@@ -35,6 +35,14 @@ body, html {
     backdrop-filter: none;
 }
 
+/* Navbar */
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; /* Set the top edge of the navbar to be attached to the top of the screen */
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
+
 .navbar-brand {
     font-weight: bold;
     color: #fff !important;
@@ -85,7 +93,86 @@ body, html {
     border-radius: 5px;
 }
 
+/* Landing section */
+.landing-section {
+    border-bottom: none;
+    display: block;
+    padding: 40px 0;
+    border-radius: 8px;
+    height: 100vh;
+}
+
+.landing-section .title {
+    margin-top: 30vh;
+}
+
+.landing-section .title h1 {
+    font-size: 6rem;
+}
+
+.landing-section .title h2 {
+    font-size: 4rem;
+}
+
+.landing-section .title h1, 
+.landing-section .title h2 {
+    text-shadow: #495057 2px 2px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: rgb(63, 0, 0, 0.20);
+    padding: 40px 0;
+    color: #fff;
+}
+
+.about-us .container-md {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsive Design for smaller devices */
+@media (max-width: 768px) {
+    .about-text {
+        flex: 0 0 100%;
+    }
+}
+
 /* Location tabs and maps */
+.location-section {
+    /* background-color: rgba(0, 1, 24, 0.50); */
+    background-color: rgb(63, 0, 0, 0.20);
+    padding: 40px;
+    border-radius: 8px;
+}
+
 .location-section .nav-tabs {
     border-bottom: none;
     display: block;
@@ -128,7 +215,7 @@ body, html {
 
 /* Style contact form section */
 .contact-form {
-    /* background-color: #f7f7f7; */
+    background-color: rgb(63, 0, 0, 0.20);
     padding: 40px;
     border-radius: 8px;
 }
@@ -136,3 +223,17 @@ body, html {
 .g-recaptcha {
     margin-bottom: 15px;
 }
+
+/* Footer Styling */
+#footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+  
