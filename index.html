@@ -24,19 +24,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+                            <a class="nav-link text-center" href="tel:+1234567890"><i class="fas fa-phone"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="mailto:contact@yourdomain.com"><i class="fas fa-envelope"></i></a>
+                            <a class="nav-link text-center" href="mailto:contact@yourdomain.com"><i class="fas fa-envelope"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/SayocKaliMunich" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="nav-link text-center" href="https://www.facebook.com/SayocKaliMunich" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/sayoc_kali_munich" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="nav-link text-center" href="https://www.instagram.com/sayoc_kali_munich" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.sayoc.com" target="_blank">SAYOC.COM</a>
+                            <a class="nav-link text-center" href="https://www.sayoc.com" target="_blank">SAYOC.COM</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -81,14 +81,44 @@
         </section> -->
 
         <!-- Address Section with Google Maps -->
-        <section class="address">
+        <section class="location-section">
             <div class="container-md py-4">
-                <h2 class="text-center mb-3">Munich Location</h2>
-                <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.701893528963!2d11.517422776908314!3d48.09669435400573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dd9c1ce6280cb%3A0xd6f786d1fd28aa57!2sSayoc%20Kali%20Germany!5e0!3m2!1sen!2snl!4v1699358205348!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="row">
+                    <h2 class="text-center mb-3">Our Locations</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <!-- Location Tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#munichSouth" data-bs-toggle="tab">Geisenhausenerstraße 18, 81379 Munich</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#munichWest" data-bs-toggle="tab">Munich West</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <!-- Map Displays -->
+                        <div class="tab-content">
+                            <!-- Munich South Map -->
+                            <div class="tab-pane active" id="munichSouth">
+                                <div class="map-responsive">
+                                    <iframe style="filter: invert(90%)" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.701893528963!2d11.517422776908314!3d48.09669435400573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dd9c1ce6280cb%3A0xd6f786d1fd28aa57!2sSayoc%20Kali%20Germany!5e0!3m2!1sen!2snl!4v1699366739117!5m2!1sen!2snl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <!-- Munich X Map -->
+                            <!-- <div class="tab-pane" id="munichWest">
+                                <div class="map-responsive">
+                                    <iframe src="Your-Munich-West-Google-Maps-Embed-URL" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        
 
         <!-- Contact Form -->
         <section class="contact-form py-5">
