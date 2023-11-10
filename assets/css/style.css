@@ -15,7 +15,7 @@ body, html {
 
 .body-bg {
     /* Use your own image URL here */
-    background-image: url('../images/sama-sama-02b.png');
+    background-image: url('../images/sama-sama-02b.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This will give a parallax-like effect */
@@ -154,58 +154,70 @@ body, html {
     }
 }
 
-/* Location tabs and maps */
-.location-section {
-    padding: 40px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.3);
+/* Combined Contact and Locations Section Styling */
+.contact-locations-section {
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
 }
 
-.location-section .nav-tabs {
-    border-bottom: none;
-    display: block;
-    background: #f8f9fa;
-    border-radius: .25rem;
+.contact-locations-section .container-md {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.location-section .nav-link {
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    margin-right: .25rem;
-    text-align: center;
+.contact-locations-section .contact-info,
+.contact-locations-section .location-list {
+    margin-bottom: 20px;
 }
 
-.location-section .nav-link:hover {
-    border-color: #e3e3e3;
+.contact-locations-section .contact-info ul,
+.contact-locations-section .location-list ul {
+    list-style: none;
+    padding: 0;
 }
 
-.location-section .nav-link.active {
-    color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
+.contact-locations-section .contact-info li,
+.contact-locations-section .location-list li {
+    margin-bottom: 10px;
 }
 
-.map-border {
-    border: 2px solid #dee2e6;
-    border-radius: 4px;
-    overflow: hidden; /* Keeps the nested iframe corners rounded */
+/* Style for contact links */
+.contact-locations-section .contact-info a,
+.contact-locations-section .location-list a {
+    color: inherit; /* This will make the link have the same color as the surrounding text */
+    text-decoration: none; /* Removes the underline from links */
+    transition: text-decoration 0.3s ease; /* Smooth transition for the underline */
 }
 
-.map-responsive iframe {
-    /* border: none; Removes the border inside the iframe */
-    filter: grayscale(100%) invert(92%) contrast(83%);
+.contact-locations-section .contact-info a:hover,
+.contact-locations-section .contact-info a:focus,
+.contact-locations-section .location-list a:hover,
+.contact-locations-section .location-list a:focus {
+    text-decoration: underline; /* Adds an underline on hover/focus */
+}
+
+
+.contact-locations-section .map-responsive {
+    height: 100%; /* Full height of the column */
+    width: 100%; /* Full width of the column */
+}
+
+.contact-locations-section .map-responsive iframe {
+    height: 100%;
     width: 100%;
-    height: 50vh;
-    border: 2px solid #dee2e6;
-    border-radius: 4px;
-    overflow: hidden; /* Keeps the nested iframe corners rounded */
+    border: none;
 }
 
-/* Style contact form section */
-.contact-us-section {
-    padding: 40px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.6);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-locations-section .row {
+        flex-direction: column;
+    }
+
+    .contact-locations-section .col-lg-6 {
+        width: 100%;
+    }
 }
 
 /* Footer Styling */
