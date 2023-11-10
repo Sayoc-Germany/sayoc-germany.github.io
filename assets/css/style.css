@@ -15,7 +15,7 @@ body, html {
 
 .body-bg {
     /* Use your own image URL here */
-    background-image: url('../images/sama-sama-04.jpg');
+    background-image: url('../images/sama-sama-02b.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This will give a parallax-like effect */
@@ -25,8 +25,16 @@ body, html {
     backdrop-filter: blur(5px);
 
     /* Ensure the content on top is not blurred */
-    position: relative;
+    position: absolute;
     z-index: 1;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
 }
 
 /* Make sure other elements like modals, dropdowns, etc., are not affected by the blur */
@@ -75,35 +83,16 @@ body, html {
     }
 }
 
-/* Carousel customization */
-.intro-slider {
-    max-height: 500px;
-    overflow: hidden;
-}
-
-.intro-slider .carousel-item img {
-    max-height: 500px;
-    width: auto;
-    max-width: 100%;
-    margin: auto;
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-}
-
 /* Landing section */
 .landing-section {
-    border-bottom: none;
     display: block;
     padding: 40px 0;
     border-radius: 8px;
-    height: 100vh;
 }
 
 .landing-section .title {
-    margin-top: 30vh;
+    margin-top: 13vh;
+    margin-bottom: 14vh;
 }
 
 .landing-section .title h1 {
@@ -120,19 +109,19 @@ body, html {
 }
 
 /* About Us Section */
-.about-us {
-    background-color: rgb(63, 0, 0, 0.20);
+.about-us-section {
     padding: 40px 0;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.about-us .container-md {
+.about-us-section .container-md {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.about-us h2 {
+.about-us-section h2 {
     text-align: center;
     margin-bottom: 30px;
 }
@@ -167,10 +156,9 @@ body, html {
 
 /* Location tabs and maps */
 .location-section {
-    /* background-color: rgba(0, 1, 24, 0.50); */
-    background-color: rgb(63, 0, 0, 0.20);
     padding: 40px;
     border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .location-section .nav-tabs {
@@ -214,14 +202,10 @@ body, html {
 }
 
 /* Style contact form section */
-.contact-form {
-    background-color: rgb(63, 0, 0, 0.20);
+.contact-us-section {
     padding: 40px;
     border-radius: 8px;
-}
-
-.g-recaptcha {
-    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Footer Styling */
@@ -236,4 +220,3 @@ body, html {
     margin: 0 auto;
     padding: 0 15px;
 }
-  
