@@ -1,9 +1,4 @@
 /* Custom CSS for Sayoc Kali Germany */
-@font-face {
-    font-family: 'Noto Sans';
-    src: url(../fonts/NotoSans-Regular.ttf);
-}
-
 body {
     font-family: "Noto Sans", Georgia, sans-serif;
     color: #fff;
